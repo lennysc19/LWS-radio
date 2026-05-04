@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LWS Radio Dashboard - Lenny Sc</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; background-color: #050505; color: white; }
+        .font-orbitron { font-family: 'Orbitron', monospace; }
+        .glass { backdrop-filter: blur(20px); background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); }
+        .neon-glow { box-shadow: 0 0 20px rgba(139, 92, 246, 0.3); }
+        .record-spin { animation: spin 20s linear infinite; }
+        @keyframes spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+    </style>
+</head>
+<body class="p-4 md:p-6 pb-20">
+    <div class="max-w-md mx-auto space-y-6">
+
+        <!-- Header -->
+        <header class="glass rounded-3xl p-6 flex items-center justify-between">
+            <div class="flex items-center space-x-4">
+                <div class="w-16 h-16 bg-gradient-to-r from-purple-500 to-pink-500 rounded-2xl flex items-center justify-center neon-glow record-spin font-orbitron font-bold text-xl">LWS</div>
+                <div>
+                    <h1 class="font-orbitron font-black text-xl">LENNY SC RADIO</h1>
+                    <p class="text-xs text-gray-400">LWS Label • Official Broadcast</p>
+                </div>
+            </div>
+        </header>
+
+        <!-- New: Cover Image -->
+        <div class="glass rounded-3xl overflow-hidden neon-glow">
+            <img src="IMG_8205.jpeg" class="w-full h-56 object-cover" alt="Lenny Sc">
+        </div>
+
+        <!-- New: About Section -->
+        <div class="glass rounded-3xl p-6">
+            <h2 class="font-orbitron font-bold mb-2">ABOUT LENNY SC</h2>
+            <p class="text-sm text-gray-300 leading-relaxed">Music about faith, perseverance, family, and the journey through struggle toward light.</p>
+        </div>
+
+        <!-- Now Playing (Original Design) -->
+        <div class="glass rounded-3xl p-6">
+            <h2 class="font-orbitron font-bold mb-4">NOW PLAYING</h2>
+            <iframe src="https://open.spotify.com/embed/artist/5ZsUI8a4CLV9hd6aDA1Qtq" width="100%" height="152" frameborder="0" allow="encrypted-media" class="rounded-xl"></iframe>
+        </div>
+
+        <!-- Featured Album (Original Design) -->
+        <div class="glass rounded-3xl p-6">
+            <h2 class="font-orbitron font-bold mb-4">FEATURED ALBUM</h2>
+            <iframe src="https://open.spotify.com/embed/album/44RuMZoXnwnlALy6Vs6ekk" width="100%" height="352" frameborder="0" allow="encrypted-media" class="rounded-xl"></iframe>
+        </div>
+
+        <!-- Now Playing Across (Platforms) -->
+        <div class="glass rounded-3xl p-6">
+            <h2 class="font-orbitron font-bold mb-4">NOW PLAYING ACROSS</h2>
+            <div class="space-y-3">
+                <a href="https://open.spotify.com/artist/5ZsUI8a4CLV9hd6aDA1Qtq" class="block bg-green-600 hover:bg-green-700 p-4 rounded-xl text-center font-bold transition">Spotify</a>
+                <a href="https://music.apple.com/cz/artist/lenny-sc/1894402734" class="block bg-blue-600 hover:bg-blue-700 p-4 rounded-xl text-center font-bold transition">Apple Music</a>
+                <a href="https://youtube.com/channel/UC2_5apbWzINz_VmDqg-fWCA" class="block bg-red-600 hover:bg-red-700 p-4 rounded-xl text-center font-bold transition">YouTube</a>
+            </div>
+        </div>
+
+        <!-- New: Merch Store -->
+        <div class="glass rounded-3xl p-6 text-center">
+            <h2 class="font-orbitron font-bold mb-2">MERCH STORE</h2>
+            <p class="text-sm text-gray-400 border border-dashed border-gray-600 p-4 rounded-xl">Coming Soon</p>
+        </div>
+
+    </div>
+</body>
+</html>
